@@ -6,7 +6,8 @@ In United States, the SAT and ACT are standardized tests used by colleges and un
 
 ### Problem Statement
 
-Analyse the SAT and ACT participation rates and score data from 2017 to 2019 and identify states with better SAT participation rate and provide recommendations to improve SAT participation rates.
+Analyse the SAT and ACT participation rates and scores from 2017 to 2019 and provide recommendations to improve SAT participation rates.
+
 
 ### Data Dictionary
 
@@ -41,17 +42,19 @@ Analyse the SAT and ACT participation rates and score data from 2017 to 2019 and
 
 ### Key Findings
 
-- There is an increase in the number of states that has 100% SAT participation rate since 2018 with Midwest region showing a better performance in 2019. This can be attributed due to growth of SAT School Day, a program where students take the SAT in their own school on a weekday, rather than taking it on a Saturday in a different school than the one they attend and benefits of the fee wavier ([source](https://www.edweek.org/teaching-learning/sat-scores-rise-as-number-of-test-takers-tops-2-million/2018/10))
+- There is an increase in the number of states that has 100% SAT participation rate since 2018 with Midwest region showing a better performance in 2019. This can be attributed due to growth of SAT School Day, a program where students take the SAT in their own school on a weekday, rather than taking it on a Saturday in a different school than the one they attend and benefits of the fee wavier ([source](https://www.edweek.org/teaching-learning/sat-scores-rise-as-number-of-test-takers-tops-2-million/2018/10)).
 
 - In general, ACT participation rate is observed to better than SAT participation rate. There are more states with 100% participation rate for ACT. ACT seems to be a preferred choice as more states made it mandatory and provide for the students. 
 
-- Northeast region fares better in SAT while South and Midwest regions seem to fares in ACT than the other 3 regions. West region has a relatively balanced number of students taking either ACT or SAT.
+- Northeast region fares better in SAT while Midwest, South and West regions seem to fares in ACT than the other 3 regions. 
 
 - In general, states with higher participation rate tends to score lower in the test while those with lower participation rate have a better score. However, this does not means the the state has the mostly the top performing students it is a small representative of students taking the test.
 
 - The relationship for each test has a strong correlation year by year. This implies state that has done well this year is likely to do well again in the next year. This correlation is stronger for the ACT test as the scores are relatively similarly across the years.
+
 - The participation rate and score is inversely related. A higher participation rate has a lower score while lower participation rate has a higher score.
 
+- Colorado and Illinois are two examples where their participation rate improved tremendously when both states implemented compulsory SAT test.
 
 ### Conclusions
 
@@ -59,15 +62,14 @@ Analyse the SAT and ACT participation rates and score data from 2017 to 2019 and
 
 - The test score is inversely related to the participation where a high participation rate implies a lower test score. With a higher participation, the test score may have a bigger spread which will affects the average of the score.
 
+- The relationship for either SAT or ACT test has a strong correlation year by year. This implies state that has done well this year is likely to do well again in the next year.
+
 - SAT fares better in Northeast region while ACT fares better in the other 3 regions. We can see the impact of the compulsory test on the participation rate. Colorado and Illinois are two cases where SAT participation rate improved tremendously when the states require the students to take the SAT test.
 
 ### Recommendations
 
 To further increase the SAT participation rate, the College Board may consider:
-- To work with the states to offer SAT as a mandatory requirement and provide programs to help the school to administer the test in an efficient way and allows the students to sit for the test conveniently. College Board can consider focusing on states that have participation rates around 40 to 60% for both SAT and ACT. Some suggested states are Texas, Virginia and California.
+
+- To work with the states to offer SAT as a mandatory requirement and provide programs to help the school to administer the test in an efficient way and allows the students to sit for the test conveniently. College Board can consider focusing on states that have 40 to 70% SAT participation rates. Some suggested states are Texas, Virginia and California.
 
 - To work with states that currently require students to take either SAT or ACT. North Carolina is recommended as it has ~ 50% participation rate even though it ACT participation rate is 100%. South Carolina is also recommended as it SAT participation rate has increased in 2019.
-
-- Further review the fee wavier program to allow more students to be able to take the test without financial constraints.
-
-- ACT test has a Science test component. College Board can consider to conduct a study whether this component is one of the factors state/student chose ACT and whether is there a need to include this in SAT test.
