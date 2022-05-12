@@ -47,7 +47,7 @@ We adopted using the Ridge model with the best R2 score to fit the data. The R2 
 |Training |24031 | 0.8755 |
 |Validation| 22771 | 0.8918 |
 
-![Predicted Values vs Actual Values](Images/predicted vs actual values.png)
+![Predicted Values vs Actual Values](https://github.com/priscng/GA-projects/blob/main/project_2/image/predicted%20vs%20actual%20values.png)
 
 
 ### Conclusions
