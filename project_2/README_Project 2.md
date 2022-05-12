@@ -17,7 +17,7 @@ The data has 81 variables. The details on the data is found in the [data descrip
 The below are added features tried out duing the modeling process:
 
 |Feature|Type|Description|
-|---|---|---|---|
+|---|---|---|
 |total bathroom|*float*|All bathrooms in the house including basement| 
 |age|*int*|Age of house (year sold minus year built)|
 |overall score|*int*|Overall quality + Overall cond|
@@ -47,7 +47,7 @@ We adopted using the Ridge model with the best R2 score to fit the data. The R2 
 |Training |24031 | 0.8755 |
 |Validation| 22771 | 0.8918 |
 
-![](Images/predicted vs actual values.png)
+![Predicted Values vs Actual Values](Images/predicted vs actual values.png)
 
 
 ### Conclusions
