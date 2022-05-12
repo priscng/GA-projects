@@ -1,13 +1,16 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project 1: Standardized Test Analysis
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project 2: Predicting House Prices in Ames
+
 
 ### Overview
 
-The housing market is highly influenced by the economy. Although we have a vast amount of data available, our company does not have an accurate measure of housing prices. Our real estate agents share the challenge of providing an accurate estimate of the house to potential clients. Also, they need to know which features will affect the housing price and give recommendations to a potential client. Therefore, this analysis aims to develop a regression model to forecast Ames home prices and identify the most influential factors.
+The housing market is heavily influenced by the economy. Despite having a vast amount of data available, our company does not possess an accurate measure of housing prices. Our real estate agents share the challenge of providing an accurate estimate of the house to potential clients. Furthermore, they need to know which features affect the housing price and provide recommendations to a potential client. Therefore, this analysis aims to develop a regression model to forecast Ames home prices and identify the most influential factors.
 
-For this analysis, we will be looking at a comprehensive housing dataset from the city of Ames in Iowa, USA ([source](https://www.kaggle.com/competitions/dsi-us-11-project-2-regression-challenge/overview)). We will be exploring Linear, Ridge and Lasso Regression models for the prediction, where these models assume a linear relationship between input variables and the target variable. The metric used to measure their performance is the Root Mean Squared Error (RSME). In view of the project scale, the analysis will be split into 2 Jupyter notebooks:
+For this analysis, we will be looking at a comprehensive housing dataset from the city of Ames in Iowa, USA ([source](https://www.kaggle.com/competitions/dsi-us-11-project-2-regression-challenge/overview)). We will be exploring Linear, Ridge and Lasso Regression models for the prediction, where these models assume a linear relationship between input variables and the target variable. The metric used to measure their performance is the Root Mean Squared Error (RSME) where the lower the RSME the better is the model performance. R2 score will also be evaluated and a score closer to 1 the better is the model performance.
 
-Notebook 1 covers Data Cleaning and Exploratory Data Analysis
-Notebook 2 covers Feature Selection, Modeling and Recommendations
+In view of the project scale, the analysis will be split into 2 Jupyter notebooks:
+
+- Notebook 1 covers Data Cleaning and Exploratory Data Analysis
+- Notebook 2 covers Feature Selection and Modeling
 
 
 ### Data Dictionary
@@ -29,14 +32,14 @@ The below are added features tried out duing the modeling process:
 
 - Area and quality of the house have strong correlation to the sale price. The age of the house also shows an impact to the prices.
 - We also observed a few features seem to have correlation (e.g. kitchen qc and overall qc) but the observed variables also have high correlation with the Sale Price. Hence, for such cases, we will consider to retain them. 
-- From the visualizations, proximity to various conditions (Condition 2), type of dwelling (Bldg Type) and type of foundation (Foundation) show a stronger correlation to the sale price. 
+- Proximity to various conditions (Condition 2), type of dwelling (Bldg Type) and type of foundation (Foundation) also show a stronger correlation to the sale price. 
 - Total bathroom is an added feature which show a higher correlation than the individual bathroom features.
 
 ###  Modeling
 
 We selected 24 features to perform the modelling using Linear, Ridge and Lasso Regression models. After spliting the train dataset, train dataset contains 1614 rows and validation dataset contains 404 rows.
 
-Among the 3 regression models, Ridge regression has the best performance during the cross validation check (R2: 0.859). Model improvement is done with different selection. The best R2 0.870 achieved is based on the below features using the log sale price for Ridge Regression. Log sale price helps to normalize the data range and reduce the skewness. Hence, using a logarithm reduce the range of the variable but preserves the differences ([source](https://towardsdatascience.com/logarithms-what-why-and-how-ff9d050d3fd7)). This may explained why using log price helps to improve the model performance.
+Among the 3 regression models, Ridge regression has the best performance during the cross validation check (R2: 0.859). Model improvement is done by selecting different features and use of log sale price. The best R2 0.870 achieved is based on the below features using the log sale price for Ridge Regression. Log sale price helps to normalize the data range and reduce the skewness. Hence, using a logarithm reduce the range of the variable but preserves the differences ([source](https://towardsdatascience.com/logarithms-what-why-and-how-ff9d050d3fd7)). This may explained why using log price helps to improve the model performance.
 
 We adopted using the Ridge model with the best R2 score to fit the data. The R2 and RSME scores obtained for the training and validation models is shown in the table below. From the graph, the predicted value and true value fit closely to the line with a few outliers observed at the lower and higher price. Overall, the model has a good performance in predicting housing sale price.
 
@@ -64,4 +67,4 @@ For buyers with budget constraint, they may not be able to buy a bigger house an
 
 ### Future Actions
 
-We can explore fine tuning the model to further improve its performance with hyperparameters (e.g. solver, max_iter). We can consider to update the current dataset with the current year (2011) data so that we can have a better reflection for the year. In addition, we may want to review the data collection process to minimize the percentage of missing data (e.g. important consideration variable to be compulsory) so as to make the analysis more accurate and meaningful. Lastly, as the buyer/seller's perspective may change (e.g. younger generation buying houses), the team will conduct a study on new features that may impact the house sale in near future.
+We can explore fine tuning the model to further improve its performance with hyperparameters (e.g. solver, max_iter). We can consider updating the current dataset with the current year (2011) data so that we can have a better reflection of the housing trend for the year. Further, we may want to examine how we gather data to reduce the amount of missing data (e.g. making a vital consideration variable mandatory) to make the analysis more meaningful and accurate. Finally, the team will conduct a study to determine if new features may affect the sale of a house in the near future as buyer/seller perspectives may change (e.g. younger generations buying houses).
