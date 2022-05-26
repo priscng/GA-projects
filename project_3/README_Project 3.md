@@ -13,11 +13,11 @@ Dota 2 and League of Legends are the top 2 popular games posted by our twitch us
 
 In this project, we will be scraping data using Pushshift for the 2 subreddits, r/DotA2 and r/leagueoflegends (Notebook 1). Data cleaning, text preprocessing (removing URLs / punctuations/stopwords, text tokenizing, and lemmatizing and stemming the text), and visualization of popular words will be done (Notebook 2). For the modeling, we will train and analyze 3 classification models, Multinomial Naive Bayes, Logistic Regression, and K-Nearest Neighbors with different vectorizers (CountVectorizer and TfidfVectorizer) and hyperparameters (Notebook 3). As this is a classification problem, the below 5 evaluation metrics will be used.
 
-a) Accuracy Score
-b) AUC Score
-c) Precision Score
-d) Recall Score
-e) F1 Score
+- Accuracy Score
+- AUC Score
+- Precision Score
+- Recall Score
+- F1 Score
 
 ### Data Dictionary
 
@@ -99,11 +99,11 @@ e) F1 Score
 
 In this analysis, the best model obtained is the Multinomial Naive Bayes classifier with Tfidf Vectorizer. The model has proven to be able to distinguish the words for the two topics with an accuracy of 89.3%. Hyper-tuning the alpha parameter improved the score by 0.14%.
 The best model scores are summarized below:
-a) Accuracy: 89.3%
-b) Recall: 91.0%
-c) Precision: 88.0%
-d) AUC Score: 89.3%
-e) F1 Score: 89.5%
+- Accuracy: 89.3%
+- Recall: 91.0%
+- Precision: 88.0%
+- AUC Score: 89.3%
+- F1 Score: 89.5%
 
 The reasons for misclassified posts are the overlapping of keywords and generic words used for both posts and generic. To reduce the number of misclassification (i.e. improving the accuracy), further analysis of the key and generic words is required. Overlapping of the keywords for both posts should be reduced. We can also consider adding generic words to the stopwords list.
 
@@ -121,13 +121,13 @@ b) consider getting more data from Reddit or other social media platforms.
 We have successfully developed a text classifier to categorize the top 2 popular games and identify the top 5 features.
 
 Although we have obtained a model with an accuracy of 85%, we can try to further improve the model accuracy to above 90%. To achieve this, we can consider to:
-a) Increase the dataset size by scrapping more posts.
-b) Expand the scope of scrapping using other websites / social platforms (e.g. Twitter) to increase the word vocabulary for better accuracy.
-c) Experiment with other classifiers and boosting techniques (e.g. Random Forest, Gradient Boosting).
+- Increase the dataset size by scrapping more posts.
+- Expand the scope of scrapping using other websites / social platforms (e.g. Twitter) to increase the word vocabulary for better accuracy.
+- Experiment with other classifiers and boosting techniques (e.g. Random Forest, Gradient Boosting).
 
 To reduce the misclassification rate for our models, analysis of the overlapping and generic words is recommended. The words identified should be removed during the text preprocessing stage.
 
-- With the top keywords, the Marketing team can think of using them to create meaningful topics to engage the users in the forum.
+With the top keywords, the Marketing team can think of using them to create meaningful topics to engage the users in the forum.
 
 ### Future Actions
 
