@@ -120,7 +120,7 @@ b) consider getting more data from Reddit or other social media platforms.
 
 We have successfully developed a text classifier to categorize the top 2 popular games and identify the top 5 features.
 
-Although we have obtained a model with an accuracy of 85%, we can try to further improve the model accuracy to above 90%. To achieve this, we can consider to:
+Although we have obtained a model with an accuracy of 89%, we can try to further improve the model accuracy to above 90%. To achieve this, we can consider to:
 - Increase the dataset size by scrapping more posts.
 - Expand the scope of scrapping using other websites / social platforms (e.g. Twitter) to increase the word vocabulary for better accuracy.
 - Experiment with other classifiers and boosting techniques (e.g. Random Forest, Gradient Boosting).
