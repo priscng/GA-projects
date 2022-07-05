@@ -130,7 +130,7 @@ Notebook 3 covers the modeling and provides recommendations, limitations and fut
 
 ### Conclusions
 
-Employees working in four-day work week companies have a high positive sentiment. A positive employee experience will lead to productivity improvement, better customer service, better talent, and less disruption. The productivity of a four-day work week company is shown to be not affected based on the comparison of employee tenure, company age, and company growth rate with industry standards. However, a four-day work week may not be as effective for an MNC company and may not be conclusive due to the small dataset. 
+Employees working in four-day work week companies have a high positive sentiment. A positive employee experience will lead to productivity improvement, better customer service, better talent, and less disruption. The productivity of a four-day work week company is shown to be not affected based on the comparison of employee tenure, company age, and company growth rate with industry standards. A four-day work week may not be as effective for an MNC company. However, result may not be conclusive due to the small MNC companies dataset. 
 
 Several models were run to analyse which model is the best model to predict the company productivity. Our recommended model based on the F1 score is the Random Forest classifier. The top 3 features that affect company productivity are rating, company growth rate, and lifespan.
 
