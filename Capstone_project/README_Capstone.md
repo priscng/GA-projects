@@ -158,7 +158,7 @@ There is no 'one-size fits all’ approach. The task force may need to adapt and
 
 - As the 4-day work week is relatively new, countries and companies have only implemented it within the last two years, which makes this analysis limited with a small dataset. Because the dataset is small, the analysis for MNC companies may not be conclusive.
 
-- The scraping of Glassdoor company reviews using Selenium proved to be a challenge. Even though there are examples of Glassdoor review scraping, they cannot be used in this project as the website's HTML changes frequently, and so the code has to be written from scratch. Additionally, there are errors with Webdriver exceptions that are fixed by using the Firefox browser since there is an issue with the Chromedriver.
+- The process of scraping Glassdoor company reviews using Selenium proved challenging. While there are examples of Glassdoor review scraping, they cannot be used in this project since HTML elements change frequently, so the code has to be written from scratch. In addition, there are time-out errors and Webdriver exception errors, which can be resolved by increasing the wait time and switching to a Firefox browser.
 
 
 ### Future Work
